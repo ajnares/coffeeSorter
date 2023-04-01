@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="row header">
+        <h1>MONTANSKOPI</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 valueBox">
+          <div class="row">GRADE 1</div>
+          <div class="row">{% block gradeOne %} {% endblock %}</div>
+        </div>
+
+        <div class="col-sm-3 valueBox">
+          <div class="row">GRADE 2</div>
+          <div class="row">{% block gradeTwo %} {% endblock %}</div>
+        </div>
+
+        <div class="col-sm-3 valueBox">
+          <div class="row">GRADE 3</div>
+          <div class="row">{% block gradeThree %} {% endblock %}</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-2">
+            <div class="row record">Date</div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="row record">Grade 1</div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="row record">Grade 2</div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="row record">Grade 3</div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <div class="row">
+            <a class="fordate" id="date-time"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="{{ url_for('static', filename='index.js')}}"></script>
+  </body>
+</html>
