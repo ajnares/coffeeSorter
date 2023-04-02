@@ -18,42 +18,46 @@
         <h1>MONTANSKOPI</h1>
       </div>
 
-      <div class="row">
-        <div class="col-sm-3 valueBox">
+      <div class="row center">
+        <div class="col-sm-2 valueBox">
           <div class="row">GRADE 1</div>
           <div class="row">{% block gradeOne %} {% endblock %}</div>
         </div>
 
-        <div class="col-sm-3 valueBox">
+        <div class="col-sm-2 valueBox">
           <div class="row">GRADE 2</div>
           <div class="row">{% block gradeTwo %} {% endblock %}</div>
         </div>
 
-        <div class="col-sm-3 valueBox">
+        <div class="col-sm-2 valueBox">
           <div class="row">GRADE 3</div>
           <div class="row">{% block gradeThree %} {% endblock %}</div>
+        </div>
+
+        <div class="col-sm-2 valueBox">
+          <div class="row">Total Sorted</div>
+          <div class="row">{% block totGrade %} {% endblock %}</div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-6">
-          <div class="col-sm-2">
-            <div class="row record">Date</div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="row record">Grade 1</div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="row record">Grade 2</div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="row record">Grade 3</div>
-          </div>
+        <div class="col-sm-2">
+          <div class="row record">Date</div>
         </div>
 
+        <div class="col-sm-2">
+          <div class="row record">Grade 1</div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="row record">Grade 2</div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="row record">Grade 3</div>
+        </div>
+
+        <!--
         <div class="col-sm-4">
           <label class="switch">
             <input type="checkbox" />
@@ -63,6 +67,7 @@
             <a class="fordate" id="date-time"></a>
           </div>
         </div>
+        -->
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

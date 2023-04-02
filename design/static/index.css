@@ -1,63 +1,56 @@
-.dashboard
-{
-background-color: #ffffff;
-text-align: center;
-width: 100%;
-height: 100%;
-color: #ffffff;
-padding: 2%;
+.dashboard {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  padding: 2%;
 }
 
-.valueBox
-{
-/*background: #534d4d;*/
-background: #111111;
-text-align: center;
-position: relative;
-margin-right: 5%;
-border-radius: 10px;
-height: 20vh
+.valueBox {
+  /*background: #534d4d;*/
+  background: #111111;
+  text-align: center;
+  position: relative;
+  margin-right: 5%;
+  border-radius: 10px;
+  height: 20vh;
 }
 
-.row
-{
-width: 100%;
-height: 30%;
-padding: 3%;
+.row {
+  width: 100%;
+  height: 30%;
+  padding: 3%;
 }
 
-.header
-{
-width: 100%;
-height: 20%;
-text-align: center;
-color: #ffffff;
-background: #111111;
+.header {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  color: #ffffff;
+  background: #111111;
 }
 
-.column
-{
-margin-left: 30%;
-text-align: center;
+.column {
+  margin-left: 30%;
+  text-align: center;
 }
 
-.bg
-{
-    background: #111111;
+.bg {
+  background: #111111;
 }
 
-.container
-{
-    width:10px;
-    height: 20%;
-    background: #111111;
+.container {
+  width: 10px;
+  height: 20%;
+  background: #111111;
 }
 
 .scene {
   display: inline-block;
   width: 200px;
   height: 260px;
-/*   border: 1px solid #CCC; */
+  /*   border: 1px solid #CCC; */
   margin: 40px 0;
   perspective: 600px;
 }
@@ -105,7 +98,6 @@ text-align: center;
   font-size: 2vh;
   margin-top: 80%;
   text-decoration: none;
-  
 }
 
 /* The switch - the box around the slider */
@@ -132,8 +124,8 @@ text-align: center;
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -144,16 +136,16 @@ text-align: center;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -171,6 +163,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.record{
+.record {
   color: #111111;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15%;
 }
