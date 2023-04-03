@@ -40,23 +40,49 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="row record">Date</div>
-        </div>
+      <div class="row center">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Grade 1</th>
+            <th>Grade 2</th>
+            <th>Grade 3</th>
+          </tr>
+          <tr>
+            <td>{%block recDateOne %} {% endblock %}</td>
+            <td>{%block recGradeOneFirst %} {% endblock %}</td>
+            <td>{%block recGradeTwoFirst %} {% endblock %}</td>
+            <td>{%block recGradeThrFirst %} {% endblock %}</td>
+          </tr>
 
-        <div class="col-sm-2">
-          <div class="row record">Grade 1</div>
-        </div>
+          <tr>
+            <td>{%block recDateTwo %} {% endblock %}</td>
+            <td>{%block recGradeOneSecond %} {% endblock %}</td>
+            <td>{%block recGradeTwoSecond %} {% endblock %}</td>
+            <td>{%block recGradeThrSecond %} {% endblock %}</td>
+          </tr>
 
-        <div class="col-sm-2">
-          <div class="row record">Grade 2</div>
-        </div>
+          <tr>
+            <td>{%block recDateThree %} {% endblock %}</td>
+            <td>{%block recGradeOneThird %} {% endblock %}</td>
+            <td>{%block recGradeTwoThird %} {% endblock %}</td>
+            <td>{%block recGradeThrThird %} {% endblock %}</td>
+          </tr>
 
-        <div class="col-sm-2">
-          <div class="row record">Grade 3</div>
-        </div>
+          <tr>
+            <td>{%block recDateFour %} {% endblock %}</td>
+            <td>{%block recGradeOneFourth %} {% endblock %}</td>
+            <td>{%block recGradeTwoFourth %} {% endblock %}</td>
+            <td>{%block recGradeThrFourth %} {% endblock %}</td>
+          </tr>
 
+          <tr>
+            <td>{%block recDateFive %} {% endblock %}</td>
+            <td>{%block recGradeOneFifth %} {% endblock %}</td>
+            <td>{%block recGradeTwoFifth %} {% endblock %}</td>
+            <td>{%block recGradeThrFifth %} {% endblock %}</td>
+          </tr>
+        </table>
         <!--
         <div class="col-sm-4">
           <label class="switch">
